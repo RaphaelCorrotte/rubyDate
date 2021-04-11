@@ -1,31 +1,33 @@
-require_relative "constants"
 require "date"
 require "time"
+require "yaml"
+require_relative "constants"
 
 module RubyDate
   class Formatter
-    attr_reader :date
-    attr_accessor :locale
+    attr_reader :date, :format_data
+    attr_accessor :locale, :formats_path, :langs_path
 
-    def initialize(locale, date = Time.new)
-      @locale, @date = locale, date
+    def initialize(locale, date = Time.new, formats_path = "lib/data/formats.yaml", langs_path = "lib/data/langs.yaml")
+      @locale, @date, @formats_path, @langs_path = locale, date, formats_path, langs_path
+      @format_data = YAML::load(File.open(@formats_path))
+      @lang_data = YAML::load(File.open(@langs_path))
     end
 
     def format(format)
-      date = @date.to_datetime.strftime(format).to_s
-      case locale
+      date = @date.to_datetime.strftime(format)
+      case @locale
       when :en
         date
       else
-        if RubyDate::Constants::FORMATS[@locale]
-          RubyDate::Constants::LANGS[@locale][:months].each_key do |key|
-            unless date.include?(key); next; end
-            p RubyDate::Constants::LANGS[@locale][:months][key]
-            date[key] = RubyDate::Constants::LANGS[@locale][:months][key]
+        if @format_data[@locale]
+          @lang_data[:months][@locale].each_key do |key|
+            next unless date.include?(key)
+            date[key] = @lang_data[:months][@locale][key]
           end
-          RubyDate::Constants::LANGS[@locale][:days].each_key do |key|
-            unless date.include?(key); next; end
-            if date.include?(key) then date[key] = RubyDate::Constants::LANGS[@locale][:days][key]; end
+          @lang_data[:days][@locale].each_key do |key|
+            next unless date.include?(key)
+            date[key] = @lang_data[:days][@locale][key]
           end
           date
         else raise "Bad locale format #{@locale}"; end
