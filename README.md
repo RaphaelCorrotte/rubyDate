@@ -1,4 +1,4 @@
-![Les Laboratoires Ruby](https://invidget.switchblade.xyz/4P7XcmbDnt)
+[![Les Laboratoires Ruby](https://invidget.switchblade.xyz/4P7XcmbDnt)](https://discord.gg/4P7XcmbDnt)
 
 # RubyDate
 
