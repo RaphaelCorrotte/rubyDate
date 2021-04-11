@@ -8,7 +8,7 @@ module RubyDate
     attr_reader :date, :format_data
     attr_accessor :locale, :formats_path, :langs_path
 
-    def initialize(locale, date = Time.new, formats_path = "lib/data/formats.yaml", langs_path = "lib/data/langs.yaml")
+    def initialize(locale, date = Time.new, formats_path = "lib/data/formats.yml", langs_path = "lib/data/langs.yml")
       @locale, @date, @formats_path, @langs_path = locale, date, formats_path, langs_path
       @format_data = YAML::load(File.open(@formats_path))
       @lang_data = YAML::load(File.open(@langs_path))
