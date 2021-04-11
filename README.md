@@ -4,8 +4,7 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubyDate`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
-
+This gem is a date manager gem. This is useful to use.
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -24,8 +23,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+This is still in wip, but there a simple usage 
+```rb
+require "yaml"
 
+file = YAML::load(File.open("lib/data/formats.yml"))
+
+puts RubyDate::Formatter.new(:fr).format(file[:fr])
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
