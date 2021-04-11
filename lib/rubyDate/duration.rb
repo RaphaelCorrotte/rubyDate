@@ -13,7 +13,7 @@ module RubyDate
     end
     def format(format)
       date = Time.strptime("#{@time.to_i - Time.new.to_i}", "%s")
-      puts test
+      puts
       if(@lang_data[format])
         date
       else
