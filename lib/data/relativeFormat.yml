@@ -1,42 +1,39 @@
-:future :
-  :fr : "dans [%t]"
-  :en : "in [%t]"
-:past :
-  :fr : "il y a [%t]"
-  :en : "[%t] ago"
-:s :
-  :fr : "une seconde"
-  :en : "a second"
-:ss :
-  :fr : "[%ss] secondes"
-  :en : "[%ss] seconds"
-:m :
-  :fr : "une minute"
-  :en : "a minute"
-:mm :
-  :fr : "[%mm] minutes"
-  :en : "[%mm] minutes"
-:h :
-  :fr : "une heure"
-  :en : "an hour"
-:hh :
-  :fr : "[%hh] heures"
-  :en : "[%hh] hours"
-:d :
-  :fr : "un jour"
-  :en : "a day"
-:dd :
-  :fr : "[%dd] jours"
-  :en : "[%dd] days"
-:M :
-  :fr : "un mois"
-  :en : "a month"
-:MM :
-  :fr : "[%MM] mois"
-  :en : "[%MM] months"
-:y :
-  :fr : "un an"
-  :en : "a year"
-:yy :
-  :fr : "[%yy] ans"
-  :en : "[%yy] years"
+:future:
+  :fr: "dans [%t]"
+  :en: "in [%t]"
+:past:
+  :fr: "il y a [%t]"
+  :en: "[%t] ago"
+:s:
+  :fr: "une seconde"
+  :en: "a second"
+:ss:
+  :fr: "[%ss] secondes"
+  :en: "[%ss] seconds"
+:m:
+  :fr: "une minute"
+  :en: "a minute"
+:mm:
+  :fr: "[%mm] minutes"
+  :en: "[%mm] minutes"
+:h:
+  :fr: "une heure"
+  :en: "an hour"
+:hh:
+  :fr: "[%hh] heures"
+  :en: "[%hh] hours"
+:d:
+  :fr: "un jour"
+  :en: "a day"
+:dd:
+  :fr: "[%dd] jours"
+  :en: "[%dd] days"
+:y:
+  :fr: "un an"
+  :en: "a year"
+:yy:
+  :fr: "[%yy] ans"
+  :en: "[%yy] years"
+:a :
+  :fr : "et"
+  :en : "and"
