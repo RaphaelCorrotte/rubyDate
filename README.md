@@ -1,11 +1,11 @@
 [![Les Laboratoires Ruby](https://invidget.switchblade.xyz/4P7XcmbDnt)](https://discord.gg/4P7XcmbDnt)
 
-
 # RubyDate
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/rubyDate`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 This gem is a date manager gem. This is useful to use.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -23,15 +23,33 @@ Or install it yourself as:
     $ gem install rubyDate
 
 ## Usage
+ ###Formatter
+This is still in wip, but there a simple usage
 
-This is still in wip, but there a simple usage 
-```rb
+```ruby
 require "yaml"
 
 file = YAML::load(File.open("lib/data/formats.yml"))
 
 puts RubyDate::Formatter.new(:fr).format(file[:fr])
 ```
+ ###Duration
+A useful example for the duration class
+```ruby
+duration = RubyDate::Duration.new(:fr, 60 * 60 * 24 * 365)
+puts duration.format("", nil, { :object => false, :array => false })
+```
+An example using the viewer
+```ruby
+duration = RubyDate::Duration.new(:fr, 60 * 60 * 24 * 365)
+puts duration.format("", :hours, { :object => false, :array => false })
+```
+And an example returning the duration in an array
+```ruby
+duration = RubyDate::Duration.new(:fr, 60 * 60 * 24 * 365)
+puts duration.format("", :hours, { :object => false, :array => true })
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
