@@ -63,7 +63,6 @@ module RubyDate
           formats.each do |key, value|
             next if duration[key][:left] === 0 and key != :seconds or duration[key][:total] === 0
             unless @relative_format_data[value][@lang]; raise "No lang found : #{@lang}"; end
-            puts "Check #{key} : #{@relative_format_data[value][@lang]}"
             strings[key] = "#{@relative_format_data[value][@lang]}"
           end
           format_date_duration = []
