@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e425950f-1cd5-4c1e-b1e4-91913cdc59e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/lib/data/formatter/formats.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/formatter/formats.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/formatter/langs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/formatter/langs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/rubyDate.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rubyDate.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/rubyDate/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/lib/rubyDate/version.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rubylab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -63,6 +63,9 @@
       <option name="presentableId" value="Default" />
       <updated>1618063775521</updated>
       <workItem from="1618063777087" duration="63935000" />
+      <workItem from="1618591273364" duration="4043000" />
+      <workItem from="1618855616316" duration="809000" />
+      <workItem from="1618922423694" duration="1254000" />
     </task>
     <servers />
   </component>
@@ -79,5 +82,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
